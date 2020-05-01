@@ -1,0 +1,164 @@
+ html{
+   font-family: 'Inconsolata', monospace;
+ }
+ img{
+   max-width: 100%; /*poder adaptar la imagen dependiendo del ancho de la pantalla*/
+ }
+ .Mayusculas{
+   text-transform: uppercase;
+   background-color: #FAF;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+ }
+
+.Titulo{
+  background-color: #FAF;
+  max-width: 940px;
+  max-height: 100px;
+  width: 100%;
+  height: 100%;
+  padding: 1em .27em 0em 1em;
+}
+.PrimerEscuela{
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 40px;
+
+}
+.primerEscuela{
+  position: relative;
+  display: inline-grid;
+  background: yellow;
+  height: 1em;
+  width: 1em;
+  left: 4px;
+  padding: 10px;
+  border-radius: 20%;
+  margin-left: 0.5em;
+}
+.adress{
+  color: #6C3483;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 2em;
+  display: inline-block;
+}
+ a{
+   text-decoration: none;
+   color: grey;
+ }
+
+p{
+  color: red;
+  font-size: 60;
+  font-style: oblique;
+}
+
+.Total{
+  background: #1F1A38;
+  background: -webkit-linear-gradient(to right, #00f260, #0575e6);
+  background: linear-gradient(to right, #00f260, #0575e6);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.parte1{
+  max-width: 960px;
+  height: 80vh;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;    overflow: scroll;
+  overflow-x: hidden;
+
+}
+
+.parte1{ /*toma los valores por defecto osea para mobiles y en las media queris toma para las chidas*/
+  padding: 1em;
+}
+td {  /* para romper los bloques en mi index. html con pantalla con width de 600 */
+  display: block;
+  width: 100%;
+}
+th{ /*ocultar los nombres o que es cada cosa, nombre sitio web ubicacion*/
+  display: none;
+}
+td:nth-of-type(1){
+  font-size: 1.5em;
+  font-weight: 3em;
+  color: #16A085;
+}
+
+
+.pargraph{
+  line-height: 18px;
+  font-weight: 200;
+  font-family: 'Inconsolata', monospace;
+}
+.fa-star{
+  color: yellow;
+}
+.barras{
+  background-color: #FAF;
+}
+.table{
+  width: 100%;
+  height: 50%
+  border-spacing: 0;
+}
+.table td, .table th{
+  padding: 1cm;
+  text-align: left;
+}
+.close{
+  right: 1em;
+  top: 1em;
+  position: absolute;
+
+}
+.Boton_X{
+  width: 1em;
+  height: 1em;
+  color: white;
+  background-color: green;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-image{
+  height: 250px;
+  width: 450px;
+  float:left; /*hacr que el texto quede aun lado de la imagen sin estorbar*/
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+@media (min-width:900px){
+  .parte1{
+    padding: 1.8em;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: auto;
+  }
+
+  td { /*,ostrar los datos ya que por defecto esta la vista del celuar*/
+    display: table-cell;
+    width: 0%;
+  }
+  th{ /*mostrar los nombres o que es cada cosa, nombre sitio web ubicacion*/
+    display: table-cell;
+  }
+  td:nth-of-type(1){
+
+  }
+}
+@media (min-height: 570px) { /*si mi pantalla tinen un minimo de 570px de alto se aplica esto si no se va a parte1 y se aplia la que esta alli para pantallas pequeñas */
+  .parte1{
+    height: 500px;
+  }
+}
